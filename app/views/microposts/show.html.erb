@@ -1,0 +1,60 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Content:</b>
+  <%= @micropost.content %>
+</p>
+
+<p>
+  <b>String:</b>
+  <%= @micropost.string %>
+</p>
+
+<p>
+  <b>User:</b>
+  <%= @micropost.user_id %>
+</p>
+
+<p>
+  <b>Category:</b>
+  <%= @micropost.category_id %>
+</p>
+
+<p>
+  <b>Created:</b>
+  <%= @micropost.created %>
+</p>
+
+<p>
+  <b>Visible:</b>
+  <%= @micropost.visible %>
+</p>
+
+<p>
+  <b>Eff dt:</b>
+  <%= @micropost.eff_dt %>
+</p>
+
+<p>
+  <b>Group:</b>
+  <%= @micropost.group_id %>
+</p>
+
+<p>
+  <b>Place name:</b>
+  <%= @micropost.place_name %>
+</p>
+
+<p>
+  <b>Latitude:</b>
+  <%= @micropost.latitude %>
+</p>
+
+<p>
+  <b>Longitude:</b>
+  <%= @micropost.longitude %>
+</p>
+
+
+<%= link_to 'Edit', edit_micropost_path(@micropost) %> |
+<%= link_to 'Back', microposts_path %>

@@ -1,0 +1,43 @@
+<h1>Listing microposts</h1>
+
+<table>
+  <tr>
+    <th>Content</th>
+    <th>String</th>
+    <th>User</th>
+    <th>Category</th>
+    <th>Created</th>
+    <th>Visible</th>
+    <th>Eff dt</th>
+    <th>Group</th>
+    <th>Place name</th>
+    <th>Latitude</th>
+    <th>Longitude</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @microposts.each do |micropost| %>
+  <tr>
+    <td><%= micropost.content %></td>
+    <td><%= micropost.string %></td>
+    <td><%= micropost.user_id %></td>
+    <td><%= micropost.category_id %></td>
+    <td><%= micropost.created %></td>
+    <td><%= micropost.visible %></td>
+    <td><%= micropost.eff_dt %></td>
+    <td><%= micropost.group_id %></td>
+    <td><%= micropost.place_name %></td>
+    <td><%= micropost.latitude %></td>
+    <td><%= micropost.longitude %></td>
+    <td><%= link_to 'Show', micropost %></td>
+    <td><%= link_to 'Edit', edit_micropost_path(micropost) %></td>
+    <td><%= link_to 'Destroy', micropost, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'New Micropost', new_micropost_path %>
