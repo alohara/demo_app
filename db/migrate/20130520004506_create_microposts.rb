@@ -2,10 +2,8 @@ class CreateMicroposts < ActiveRecord::Migration
   def change
     create_table :microposts do |t|
       t.string :content
-      t.string :string
       t.integer :user_id
       t.integer :category_id
-      t.timestamp :created
       t.boolean :visible
       t.timestamp :eff_dt
       t.integer :group_id

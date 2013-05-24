@@ -3,10 +3,8 @@
 <table>
   <tr>
     <th>Content</th>
-    <th>String</th>
     <th>User</th>
     <th>Category</th>
-    <th>Created</th>
     <th>Visible</th>
     <th>Eff dt</th>
     <th>Group</th>
@@ -21,10 +19,8 @@
 <% @microposts.each do |micropost| %>
   <tr>
     <td><%= micropost.content %></td>
-    <td><%= micropost.string %></td>
     <td><%= micropost.user_id %></td>
     <td><%= micropost.category_id %></td>
-    <td><%= micropost.created %></td>
     <td><%= micropost.visible %></td>
     <td><%= micropost.eff_dt %></td>
     <td><%= micropost.group_id %></td>
